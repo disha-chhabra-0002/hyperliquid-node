@@ -20,10 +20,10 @@ module "node-static-ip" {
 
 module "node-1" {
   source       = "./modules/compute"
-  name         = "hyperliquid-node"
+  name         = "hyperliquid-node-latest"
   machine_type = "n2-standard-8"
   zone         = var.zone
-  image        = "ubuntu-minimal-2204-lts"
+  image        = "ubuntu-2404-lts-amd64"
   network      = module.network.vpc_name
   subnet       = element(module.network.subnet_names, 0)  # gets the first subnet_names
   tags         =["hyperliquid-node"]
