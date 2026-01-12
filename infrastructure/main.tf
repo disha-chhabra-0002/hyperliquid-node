@@ -2,10 +2,10 @@ module "network" {
   source     = "./modules/network"
   project_id = var.project_id
   region     = var.region
-  vpc_name   = "${var.env}-hyperliquid-vpc-2"
+  vpc_name   = "${var.env}-hyperliquid-vpc-3"
 
   subnets = [
-  { name = "${var.env}-hyperliquid-subnet-1", cidr_range = "10.10.1.0/24" }
+  { name = "${var.env}-hyperliquid-subnet-11", cidr_range = "10.10.1.0/24" }
 ]
 }
 
