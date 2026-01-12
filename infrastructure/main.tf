@@ -15,6 +15,7 @@ module "node-static-ip" {
     address_type = "EXTERNAL"
     ip_version   = "IPV4"
     region       = var.region
+    project_id = var.project_id
 }
 
 

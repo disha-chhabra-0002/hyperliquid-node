@@ -1,5 +1,6 @@
 resource "google_compute_firewall" "general" {
   name    = "${var.vpc_name}-hyperliquid-node"
+  
   network = google_compute_network.vpc.name
 
   allow {
