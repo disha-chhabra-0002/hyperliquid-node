@@ -8,6 +8,6 @@ variable "tags" {
    type = list(string)
 }
 
-variable "script" {}
+# variable "script" {}
 variable "disk_size" {}
 variable "ip_address" {}

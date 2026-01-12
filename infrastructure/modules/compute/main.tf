@@ -20,5 +20,5 @@ resource "google_compute_instance" "this" {
     }  # gives external IP
   }
 
-  metadata_startup_script = var.script
+ #  metadata_startup_script = var.script
 }
