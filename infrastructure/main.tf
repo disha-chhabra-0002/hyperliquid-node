@@ -5,7 +5,7 @@ module "network" {
   vpc_name   = "${var.env}-hyperliquid-vpc-2"
 
   subnets = [
-  { name = "${var.env}-subnet-1", cidr_range = "10.10.1.0/24" }
+  { name = "${var.env}-hyperliquid-subnet-1", cidr_range = "10.10.1.0/24" }
 ]
 }
 
