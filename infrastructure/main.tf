@@ -11,7 +11,7 @@ module "network" {
 
 module "node-static-ip" {
     source = "./modules/ip"
-    name = "node-static-ip"
+    name = "node-static-ip-1"
     address_type = "EXTERNAL"
     ip_version   = "IPV4"
     region       = var.region
